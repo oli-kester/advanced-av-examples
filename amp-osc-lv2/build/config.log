@@ -1,0 +1,47 @@
+# project amp-osc.lv2 (1.0.0) configured on Fri Dec 18 17:19:57 2015 by
+# waf 1.8.5 (abi 98, python 20706f0 on linux2)
+# using ./waf configure
+#
+----------------------------------------
+Setting top to
+/home/oliver/Documents/uni/year4/av-processing/git/advanced-av-examples/amp-osc-lv2
+----------------------------------------
+Setting out to
+/home/oliver/Documents/uni/year4/av-processing/git/advanced-av-examples/amp-osc-lv2/build
+----------------------------------------
+Checking for 'gcc' (C compiler)
+find program=['gcc', 'cc'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games'] var='CC' -> ['/usr/bin/gcc']
+find program=['ar'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games'] var='AR' -> ['/usr/bin/ar']
+/usr/bin/gcc
+----------------------------------------
+Checking for 'g++' (C++ compiler)
+find program=['g++', 'c++'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games'] var='CXX' -> ['/usr/bin/g++']
+(tool ar is already loaded, skipping)
+/usr/bin/g++
+----------------------------------------
+Checking for program 'pkg-config'
+/usr/bin/pkg-config
+find program=['pkg-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games'] var='PKGCONFIG' -> ['/usr/bin/pkg-config']
+----------------------------------------
+Checking for 'lv2'
+['/usr/bin/pkg-config', '--cflags', '--libs', 'lv2']
+out:   
+
+yes
+----------------------------------------
+Checking for library m
+==>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] Compiling [32mbuild/.conf_check_7c4469ca3006be63d56b2680f69a7d3a/test.cpp[0m
+
+['/usr/bin/g++', '-I/home/oliver/Documents/uni/year4/av-processing/git/advanced-av-examples/amp-osc-lv2', '-DNDEBUG', '-fshow-column', '-fPIC', '-I/home/oliver/Documents/uni/year4/av-processing/git/advanced-av-examples/amp-osc-lv2/build/.conf_check_7c4469ca3006be63d56b2680f69a7d3a/testbuild', '../test.cpp', '-c', '-o', '/home/oliver/Documents/uni/year4/av-processing/git/advanced-av-examples/amp-osc-lv2/build/.conf_check_7c4469ca3006be63d56b2680f69a7d3a/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_7c4469ca3006be63d56b2680f69a7d3a/testbuild/libtestprog.so[0m
+
+['/usr/bin/g++', '-shared', 'test.cpp.1.o', '-o', '/home/oliver/Documents/uni/year4/av-processing/git/advanced-av-examples/amp-osc-lv2/build/.conf_check_7c4469ca3006be63d56b2680f69a7d3a/testbuild/libtestprog.so', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm']
+yes
